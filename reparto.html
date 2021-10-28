@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- Esta es el formato con el que se escribe un comentario en HTML. -->
+<html lang="es">
+    <head>
+        <title>Página de tributo - El Chavo del Ocho</title>
+        <meta charset="utf-8">
+        <!-- Esta etiqueta se utiliza para calcular correctamente la proporciones en sitios web responsive. No es estrictamente necesaria. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" media="screen" href="styles.css">
+    </head>
+    <body>
+        <!-- El elemento div es simplemente un contenedor genérico, sin sentido semántico. -->
+        <div id="principal">
+            <header>
+                <h1>El Chavo del Ocho</h1>
+                <div class="subtitulo">El niño que vivía en un barril</div>
+            </header>
+            <main>
+                <!-- El elemento section separa secciones del contenido del documento. -->
+                <section id="tributo-info">
+                    <h2>Personajes principales:</h2>
+                    <div class="personajes">
+                        <!-- El elemento article indica distintos articulos independientes. (Puede ser anidado. Por ejemplo: Una publicación en una red social, y sus comentarios asociados.) -->
+                        <article class="personajes-item">
+                            <h3>El Chavo</h3>
+                            <img src="imgs/chavo.jpg">
+                            <p>Es un niño huérfano de 8 años de edad. Generalmente se esconde en un barril, pero él asegura vivir en el departamento N.º 8.</p>
+                        </article>
+                        <article class="personajes-item">
+                            <h3>La Chilindrina</h3>
+                            <img src="imgs/chilindrina.jpg">
+                            <p>Es la hija de Don Ramón y mejor amiga del Chavo y Quico.</p>
+                        </article>
+                        <article class="personajes-item">
+                            <h3>Quico</h3>
+                            <img src="imgs/quico.jpg">
+                            <p>Es el hijo de Doña Florinda y mejor amigo del Chavo y la Chilindrina.</p>
+                        </article>
+                    </div>
+                </section>
+                <section id="leer-mas">
+                    <p>
+                        <!-- El elemento con la etiqueta <a> corresponde a un ENLACE, y es muy utilizado. -->
+                        Si querés saber más sobre nuestro amigo del barril, podés encontrar más información en <a id="tribute-link" target="_blank" href="index.html">la página principal</a>.
+                    </p>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>

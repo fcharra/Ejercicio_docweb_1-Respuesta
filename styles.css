@@ -1,0 +1,154 @@
+/*
+ * "Reseteando" los bordes y espaciados por defecto de todos los navegadores.
+ * Esto es siempre opcional.
+ */
+* {
+    padding: 3px;
+    margin: 3px;
+    border: 0px;
+}
+
+/*
+ * El cuerpo principal. Algunas propiedades (como la fuente) afectarán a todo el resto de los elementos, salvo que se indique lo contrario.
+ */
+body {
+    color: #2a150d;
+    text-align: left;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+/*
+ * Se usa para separar el elemento principal.
+ */
+#principal {
+    margin: auto;
+    display: block;
+    width: 90%;
+    background-color: #fffcad;
+    padding: 16px;
+    border: 2px solid black;
+}
+
+/*
+ * Encabezados. (De lo general, a lo particular.)
+ */
+
+ h1, h2 {
+    margin-bottom: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0px;
+}
+
+/*
+ * Reglas específicas al listado de características. Nótese el uso de clases, mediante un selector con punto.
+ */
+
+ul.caracteristicas {
+    margin-top: 6px;
+}
+
+li.caracteristicas-item {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+ * Reglas específicas a la hoja de personajes. Nótese tanto la selección de elementos "hijos", como el uso de pseudoselectores.
+ */
+
+ .personajes article {
+    border-radius: 20px;
+}
+
+.personajes article:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+.personajes article:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.personajes h3 {
+    text-align: center;
+}
+
+.personajes-item img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    min-width: 250px;
+    border-radius: 20px;
+}
+
+/*
+ * Si bien los siguientes elementos se definieron de forma general, en la práctica solo afectan a la primera página. (Que fue la primera que se hizo.)
+ * Una buena ejercitación podría ser replantear el CSS y el HTML, de forma que quede separado un CSS común, y otro para cada página.
+ */
+
+.subtitulo {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 6px;
+}
+
+figure {
+    text-align: center;
+    background-color: white;
+    padding: 6px;
+    box-shadow: 5px 5px 3px grey;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 6px;
+}
+
+blockquote {
+    text-align: center;
+    font-family: Cambria, "Liberation Serif", "Times New Roman", serif;
+    font-style: italic;
+    border-left: 2px solid black;
+}
+
+blockquote::first-letter {
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+blockquote footer {
+    text-align: right;
+    font-style: normal;
+}
+
+#tributo-info {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#personajes {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#leer-mas {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+#cita {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+
+#imagen {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin: auto;
+}
